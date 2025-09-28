@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  Sprout,
+  Wheat,
   Facebook,
   Twitter,
   Instagram,
@@ -19,37 +19,36 @@ const FooterSection = () => {
           {/* Company Info */}
           <div>
             <Link to="/" className="flex items-center space-x-2 mb-6">
-              <Sprout className="h-6 w-6 text-green-400" />
-              <span className="text-xl font-bold text-green-400-dark">
-                FarmWise
+              <Wheat className="h-6 w-6" style={{ color: 'var(--kerala-green)' }} />
+              <span className="text-xl font-bold" style={{ color: 'var(--kerala-green)' }}>
+                Krishi Sakhi
               </span>
             </Link>
             <p className="text-gray-600 mb-6">
-              Empowering farmers with technology, subsidies, and expert advice
-              to create sustainable and profitable agricultural futures.
+              AI-powered agricultural advisor providing personalized scheme recommendations and multilingual support for Kerala's farmers.
             </p>
             <div className="flex space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-blue-600 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-blue-600 transition-colors"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-blue-600 transition-colors"
               >
                 <Instagram className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-green-400 transition-colors"
+                className="text-gray-400 hover:text-blue-600 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -65,7 +64,7 @@ const FooterSection = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-600 hover:text-green-400 transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Home
                 </Link>
@@ -73,7 +72,7 @@ const FooterSection = () => {
               <li>
                 <Link
                   to="#features"
-                  className="text-gray-600 hover:text-green-400 transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   Features
                 </Link>
@@ -81,7 +80,7 @@ const FooterSection = () => {
               <li>
                 <Link
                   to="#about"
-                  className="text-gray-600 hover:text-green-400 transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
                   About Us
                 </Link>
@@ -89,17 +88,25 @@ const FooterSection = () => {
               <li>
                 <Link
                   to="/subsidy"
-                  className="text-gray-600 hover:text-green-400 transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Apply for Subsidy
+                  Get Personalized Schemes
                 </Link>
               </li>
               <li>
                 <Link
                   to="/chat"
-                  className="text-gray-600 hover:text-green-400 transition-colors"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
                 >
-                  Expert Chat
+                  Chat with AI
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/scheme"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
+                  Analyze Schemes
                 </Link>
               </li>
             </ul>
@@ -112,19 +119,19 @@ const FooterSection = () => {
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-green-400 mr-3 mt-0.5" />
+                <MapPin className="h-5 w-5 mr-3 mt-0.5" style={{ color: 'var(--kerala-green)' }} />
                 <span className="text-gray-600">
-                  123 Farm Lane, <br />
-                  Agriville, CA 94107
+                  Agricultural Technology Center, <br />
+                  Thiruvananthapuram, Kerala 695014
                 </span>
               </li>
               <li className="flex items-center">
-                <Phone className="h-5 w-5 text-green-400 mr-3" />
-                <span className="text-gray-600">(123) 456-7890</span>
+                <Phone className="h-5 w-5 mr-3" style={{ color: 'var(--kerala-green)' }} />
+                <span className="text-gray-600">+91 471 234 5678</span>
               </li>
               <li className="flex items-center">
-                <Mail className="h-5 w-5 text-green-400 mr-3" />
-                <span className="text-gray-600">info@farmwise.com</span>
+                <Mail className="h-5 w-5 mr-3" style={{ color: 'var(--kerala-green)' }} />
+                <span className="text-gray-600">support@krishisakhi.gov.in</span>
               </li>
             </ul>
           </div>
@@ -135,8 +142,7 @@ const FooterSection = () => {
               Newsletter
             </h3>
             <p className="text-gray-600 mb-4">
-              Subscribe to our newsletter for the latest farming tips, subsidy
-              news, and agricultural insights.
+              Subscribe to our newsletter for the latest Kerala agricultural schemes, AI updates, and farming insights.
             </p>
             <form className="space-y-2">
               <input
@@ -146,7 +152,8 @@ const FooterSection = () => {
               />
               <button
                 type="submit"
-                className="w-full bg-primary text-white py-2 px-4 rounded-md hover:bg-primary-dark transition-colors"
+                className="w-full text-white py-2 px-4 rounded-md transition-colors"
+                style={{ backgroundColor: 'var(--kerala-green)' }}
               >
                 Subscribe
               </button>
@@ -157,7 +164,7 @@ const FooterSection = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-500 text-sm">
-            © {new Date().getFullYear()} FarmWise. All rights reserved.
+            © {new Date().getFullYear()} Krishi Sakhi. All rights reserved. | Powered by AI for Kerala's Farmers
           </p>
         </div>
       </div>

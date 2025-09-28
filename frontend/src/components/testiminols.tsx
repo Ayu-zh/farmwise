@@ -5,43 +5,42 @@ const testimonials = [
   {
     id: 1,
     content:
-      "FarmWise helped me secure a crucial subsidy that transformed my farm's irrigation system. The application process was straightforward, and their team provided excellent guidance.",
-    author: "Michael Johnson",
-    role: "Wheat Farmer, Iowa",
+      "Krishi Sakhi helped me find the perfect water management scheme for my rice fields in Kuttanad. The AI understood my specific needs and guided me through the entire application process in Malayalam.",
+    author: "Ravi Krishnan",
+    role: "Rice Farmer, Kuttanad",
     avatar: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 5,
   },
   {
     id: 2,
     content:
-      "The expert chat feature has been a game-changer for our organic farm. We got immediate answers during a pest crisis that saved our entire crop this season.",
-    author: "Sarah Williams",
-    role: "Organic Farmer, California",
+      "The AI chat feature saved my spice plantation when I had urgent questions about organic certification schemes. I got instant answers in my language and successfully applied for the subsidy.",
+    author: "Meera Nair",
+    role: "Spice Farmer, Idukki",
     avatar: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 5,
   },
   {
     id: 3,
     content:
-      "As a new farmer, navigating subsidies seemed overwhelming until I found FarmWise. Their platform simplified everything, and I received my first subsidy within weeks.",
-    author: "Robert Chen",
-    role: "New Farmer, Oregon",
+      "As a young coconut farmer, I was overwhelmed by government scheme documents. Krishi Sakhi's document analysis feature simplified everything and helped me access three different subsidies.",
+    author: "Arjun Pillai",
+    role: "Coconut Farmer, Thrissur",
     avatar: "https://randomuser.me/api/portraits/men/62.jpg",
-    rating: 4,
+    rating: 5,
   },
 ];
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-24 bg-farm-beige">
+    <section className="py-24" style={{ backgroundColor: 'var(--kerala-light-green)' }}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Trusted by Farmers Nationwide
+            Trusted by Kerala's Farming Community
           </h2>
           <p className="text-gray-600">
-            Hear from the farming community about how FarmWise has helped
-            transform their agricultural operations.
+            Hear from farmers across Kerala about how Krishi Sakhi has helped them access government schemes and improve their agricultural practices.
           </p>
         </div>
 
@@ -53,7 +52,7 @@ const TestimonialsSection = () => {
               style={{ animationDelay: `${testimonial.id * 0.1}s` }}
             >
               {/* Quotation mark */}
-              <div className="absolute -top-4 -left-4 bg-primary text-white w-8 h-8 flex items-center justify-center rounded-full text-xl font-bold">
+              <div className="absolute -top-4 -left-4 text-white w-8 h-8 flex items-center justify-center rounded-full text-xl font-bold" style={{ backgroundColor: 'var(--kerala-green)' }}>
                 "
               </div>
 
@@ -64,9 +63,10 @@ const TestimonialsSection = () => {
                     key={i}
                     className={`h-4 w-4 ${
                       i < testimonial.rating
-                        ? "text-farm-yellow fill-farm-yellow"
+                        ? "fill-current text-yellow-400"
                         : "text-gray-300"
                     }`}
+                    style={i < testimonial.rating ? { color: 'var(--kerala-gold)' } : {}}
                   />
                 ))}
               </div>
@@ -79,7 +79,8 @@ const TestimonialsSection = () => {
                 <img
                   src={testimonial.avatar}
                   alt={testimonial.author}
-                  className="h-12 w-12 rounded-full object-cover border-2 border-farm-green-light"
+                  className="h-12 w-12 rounded-full object-cover border-2"
+                  style={{ borderColor: 'var(--kerala-green)' }}
                 />
                 <div className="ml-3">
                   <p className="font-medium text-gray-800">

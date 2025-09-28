@@ -2,11 +2,11 @@ import React from "react";
 import { CheckCircle, Leaf } from "lucide-react";
 
 const benefits = [
-  "Increased approval rates for agricultural subsidies",
-  "24/7 expert farming advice and support",
-  "Data-driven insights for better crop management",
-  "Sustainable farming techniques and resources",
-  "Community of like-minded farmers for knowledge sharing",
+  "AI-powered personalized scheme recommendations for Kerala farmers",
+  "Multilingual support in Malayalam and English",
+  "Simplified access to complex government scheme documents",
+  "Instant AI assistance for rice, coconut, spice, and rubber farming",
+  "Streamlined application process for agricultural subsidies",
 ];
 
 const AboutSection = () => {
@@ -17,13 +17,13 @@ const AboutSection = () => {
           {/* Image side */}
           <div className="lg:w-1/2 animate-fade-in-up">
             <div className="relative">
-              <div className="absolute -top-4 -left-4 w-20 h-20 bg-primary rounded-full opacity-20"></div>
-              <div className="absolute -bottom-6 -right-6 w-28 h-28 bg-farm-yellow rounded-full opacity-20"></div>
+              <div className="absolute -top-4 -left-4 w-20 h-20 rounded-full opacity-20" style={{ backgroundColor: 'var(--kerala-green)' }}></div>
+              <div className="absolute -bottom-6 -right-6 w-28 h-28 rounded-full opacity-20" style={{ backgroundColor: 'var(--kerala-gold)' }}></div>
 
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="https://eos.com/wp-content/uploads/2020/02/checking-plant-using-technologies.jpg.webp"
-                  alt="Farmers using technology"
+                  src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  alt="Kerala farmers using modern technology"
                   className="w-full h-[400px] object-cover"
                 />
               </div>
@@ -35,28 +35,24 @@ const AboutSection = () => {
             className="lg:w-1/2 space-y-6 animate-fade-in-up"
             style={{ animationDelay: "0.2s" }}
           >
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-light text-green-400 font-medium text-sm">
+            <div className="inline-flex items-center px-3 py-1 rounded-full text-white font-medium text-sm" style={{ backgroundColor: 'var(--kerala-green)' }}>
               <Leaf className="h-4 w-4 mr-2" />
-              <span>Our Mission</span>
+              <span>Solving Kerala's Agricultural Challenges</span>
             </div>
 
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 leading-tight">
-              Empowering Farmers with{" "}
-              <span className="text-green-400">Technology</span>
+              Bridging the Gap for{" "}
+              <span style={{ color: 'var(--kerala-green)' }}>Kerala's Smallholder Farmers</span>
             </h2>
 
             <p className="text-gray-600">
-              At FarmWise, we believe that modern technology should be
-              accessible to all farmers, regardless of farm size. Our platform
-              combines agricultural expertise with cutting-edge technology to
-              help farmers increase productivity, secure subsidies, and
-              implement sustainable practices.
+              Kerala's smallholder farmers face unique challenges with complex government scheme documentation and generic agricultural advice. Krishi Sakhi uses AI to understand local farming contexts - from Kuttanad's rice paddies to Idukki's spice gardens - providing personalized scheme recommendations and multilingual support that makes government benefits truly accessible.
             </p>
 
             <div className="space-y-3 mt-6">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start">
-                  <CheckCircle className="h-5 w-5 text-green-400 shrink-0 mt-0.5" />
+                  <CheckCircle className="h-5 w-5 shrink-0 mt-0.5" style={{ color: 'var(--kerala-green)' }} />
                   <span className="ml-3 text-gray-600">{benefit}</span>
                 </div>
               ))}
@@ -70,14 +66,12 @@ const AboutSection = () => {
                   className="h-12 w-12 rounded-full object-cover"
                 />
                 <div>
-                  <p className="font-medium text-gray-800">John Doe</p>
-                  <p className="text-sm text-gray-500">Founder, FarmWise</p>
+                  <p className="font-medium text-gray-800">Dr. Priya Nair</p>
+                  <p className="text-sm text-gray-500">Agricultural AI Specialist, Krishi Sakhi</p>
                 </div>
               </div>
               <p className="italic text-gray-600 mt-3">
-                "Our goal is to bridge the gap between traditional farming
-                wisdom and modern technology to create a more sustainable and
-                profitable agricultural future."
+                "By combining AI technology with deep understanding of Kerala's agricultural landscape, we're making government schemes accessible to every farmer, from traditional rice cultivators to modern spice growers."
               </p>
             </div>
           </div>

@@ -1,63 +1,62 @@
 import React from "react";
 import {
-  Sprout,
-  FileSpreadsheet,
+  Target,
   MessageSquare,
-  BarChart4,
-  CloudSun,
-  DollarSign,
+  FileText,
+  Globe,
+  User,
+  Database,
 } from "lucide-react";
 
 const features = [
   {
-    icon: <FileSpreadsheet className="h-6 w-6 text-green-400" />,
-    title: "Subsidy Applications",
+    icon: <Target className="h-6 w-6" style={{ color: 'var(--kerala-green)' }} />,
+    title: "AI-Powered Scheme Matching",
     description:
-      "Streamlined agricultural subsidy applications with expert guidance and high approval rates.",
+      "Get personalized government scheme recommendations based on your farm profile, location, and crop choices.",
   },
   {
-    icon: <MessageSquare className="h-6 w-6 text-green-400" />,
-    title: "Expert Chat",
+    icon: <MessageSquare className="h-6 w-6" style={{ color: 'var(--kerala-blue)' }} />,
+    title: "Conversational AI Interface",
     description:
-      "Connect with agricultural experts to get answers to your farming questions 24/7.",
+      "Chat with our AI assistant in Malayalam or English to get instant answers about schemes and farming practices.",
   },
   {
-    icon: <BarChart4 className="h-6 w-6 text-green-400" />,
-    title: "Yield Analysis",
+    icon: <FileText className="h-6 w-6" style={{ color: 'var(--kerala-gold)' }} />,
+    title: "Document Analysis & Summaries",
     description:
-      "Data-driven insights to maximize your crop yields and optimize farm operations.",
+      "Upload and analyze complex government scheme documents with AI-powered summaries in simple language.",
   },
   {
-    icon: <CloudSun className="h-6 w-6 text-green-400" />,
-    title: "Weather Integration",
+    icon: <Globe className="h-6 w-6" style={{ color: 'var(--kerala-green)' }} />,
+    title: "Multilingual Support",
     description:
-      "Real-time weather forecasts and alerts tailored to your specific farming location.",
+      "Access all features in Malayalam and English, making agricultural guidance accessible to all farmers.",
   },
   {
-    icon: <DollarSign className="h-6 w-6 text-green-400" />,
-    title: "Financial Planning",
+    icon: <User className="h-6 w-6" style={{ color: 'var(--kerala-blue)' }} />,
+    title: "Personalized Recommendations",
     description:
-      "Tools to help manage farm finances, track expenses, and plan for future growth.",
+      "Receive tailored advice based on your land size, crop type, location, and farming practices.",
   },
   {
-    icon: <Sprout className="h-6 w-6 text-green-400" />,
-    title: "Sustainable Practices",
+    icon: <Database className="h-6 w-6" style={{ color: 'var(--kerala-gold)' }} />,
+    title: "Government Scheme Database",
     description:
-      "Guidance on implementing eco-friendly and sustainable farming techniques.",
+      "Access comprehensive information about Kerala and central government agricultural schemes and subsidies.",
   },
 ];
 
 const FeaturesSection = () => {
   return (
-    <section id="features" className="py-24 bg-primary-light/30">
+    <section id="features" className="py-24" style={{ backgroundColor: 'var(--kerala-light-blue)' }}>
       <div className="container mx-auto px-4">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Comprehensive Farming Solutions
+            AI-Powered Agricultural Solutions for Kerala Farmers
           </h2>
           <p className="text-gray-600">
-            FarmWise provides an all-in-one platform to help modern farmers
-            thrive with technology-driven solutions and expert support.
+            Krishi Sakhi provides intelligent scheme matching, conversational AI support, and document analysis to help Kerala's farmers access government benefits and expert guidance.
           </p>
         </div>
 
@@ -68,7 +67,7 @@ const FeaturesSection = () => {
               className="bg-white rounded-xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300 animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="bg-primary-light/50 rounded-full w-14 h-14 flex items-center justify-center mb-6">
+              <div className="rounded-full w-14 h-14 flex items-center justify-center mb-6" style={{ backgroundColor: 'var(--kerala-light-green)' }}>
                 {feature.icon}
               </div>
               <h3 className="text-xl font-semibold text-gray-800 mb-3">

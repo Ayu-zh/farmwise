@@ -1,20 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Sprout, Menu, X } from "lucide-react";
+import { Wheat, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const LandingNavbar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-farm-green/10">
+    <nav className="bg-white/90 backdrop-blur-sm sticky top-0 z-50 border-b border-blue-200/30">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Sprout className="h-6 w-6 text-green-400" />
-            <span className="text-xl font-bold text-green-400-dark">
-              FarmWise
+            <Wheat className="h-6 w-6" style={{ color: 'var(--kerala-green)' }} />
+            <span className="text-xl font-bold" style={{ color: 'var(--kerala-green)' }}>
+              Krishi Sakhi
             </span>
           </Link>
 
@@ -22,25 +22,25 @@ const LandingNavbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               to="/"
-              className="text-gray-700 hover:text-green-400 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Home
             </Link>
             <Link
               to="#features"
-              className="text-gray-700 hover:text-green-400 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Features
             </Link>
             <Link
               to="#about"
-              className="text-gray-700 hover:text-green-400 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               About
             </Link>
             <Link
               to="#contact"
-              className="text-gray-700 hover:text-green-400 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Contact
             </Link>
@@ -51,22 +51,22 @@ const LandingNavbar = () => {
             <Link to="/chat">
               <Button
                 variant="outline"
-                className="border-farm-green text-green-400 hover:bg-primary hover:text-white"
+                className="border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
               >
-                Chat
+                Chat with AI
               </Button>
             </Link>
             <Link to="/scheme">
               <Button
                 variant="outline"
-                className="border-farm-green text-green-400 hover:bg-primary hover:text-white"
+                className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
               >
-                Scheme
+                Analyze Schemes
               </Button>
             </Link>
             <Link to="/subsidy">
-              <Button className="bg-primary hover:bg-primary-dark">
-                Apply for Subsidy
+              <Button className="text-white" style={{ backgroundColor: 'var(--kerala-green)' }}>
+                Get Personalized Schemes
               </Button>
             </Link>
           </div>
@@ -80,9 +80,9 @@ const LandingNavbar = () => {
               aria-label="Toggle menu"
             >
               {isMenuOpen ? (
-                <X className="h-6 w-6 text-green-400" />
+                <X className="h-6 w-6 text-blue-600" />
               ) : (
-                <Menu className="h-6 w-6 text-green-400" />
+                <Menu className="h-6 w-6 text-blue-600" />
               )}
             </Button>
           </div>
@@ -123,14 +123,22 @@ const LandingNavbar = () => {
               <Link to="/chat" onClick={() => setIsMenuOpen(false)}>
                 <Button
                   variant="outline"
-                  className="w-full border-farm-green text-green-400 hover:bg-primary hover:text-white"
+                  className="w-full border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
                 >
-                  Chat
+                  Chat with AI
+                </Button>
+              </Link>
+              <Link to="/scheme" onClick={() => setIsMenuOpen(false)}>
+                <Button
+                  variant="outline"
+                  className="w-full border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
+                >
+                  Analyze Schemes
                 </Button>
               </Link>
               <Link to="/subsidy" onClick={() => setIsMenuOpen(false)}>
-                <Button className="w-full bg-primary text-white hover:bg-primary-dark">
-                  Apply for Subsidy
+                <Button className="w-full text-white" style={{ backgroundColor: 'var(--kerala-green)' }}>
+                  Get Personalized Schemes
                 </Button>
               </Link>
             </div>

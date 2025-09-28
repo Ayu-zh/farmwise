@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Wheat, Leaf, Tractor } from "lucide-react";
+import { ArrowRight, Wheat, Leaf, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
@@ -16,28 +16,28 @@ const HeroSection = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Hero Content */}
           <div className="lg:w-1/2 space-y-6 animate-fade-in-up">
-            <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-light text-green-400 font-medium text-sm">
+            <div className="inline-flex items-center px-3 py-1 rounded-full text-white font-medium text-sm" style={{ backgroundColor: 'var(--kerala-green)' }}>
               <Leaf className="h-4 w-4 mr-2" />
-              <span>Sustainable Farming Solutions</span>
+              <span>AI-Powered Agricultural Guidance</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800 leading-tight">
-              Grow your farm with{" "}
-              <span className="text-green-400">FarmWise</span> Solutions
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 leading-tight">
+              Empower your farming with{" "}
+              <span style={{ color: 'var(--kerala-green)' }}>Krishi&nbsp;Sakhi</span> - Your AI Agricultural Companion
             </h1>
 
             <p className="text-lg text-gray-600 max-w-lg">
-              Empowering farmers with smart technology, agricultural subsidies,
-              and expert advice to maximize yields and sustainability.
+              Personalized scheme recommendations, AI-powered guidance, and multilingual support for Kerala's farmers. Get instant access to government subsidies and expert agricultural advice.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link to="/subsidy">
                 <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary-dark text-white"
+                  className="text-white"
+                  style={{ backgroundColor: 'var(--kerala-green)' }}
                 >
-                  Apply for Subsidy
+                  Get Personalized Schemes
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
@@ -45,9 +45,10 @@ const HeroSection = () => {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-farm-green text-green-400 hover:bg-primary-light"
+                  className="border-green-600 text-green-600 hover:bg-green-600 hover:text-white"
                 >
-                  Chat with Expert
+                  <MessageSquare className="mr-2 h-4 w-4" />
+                  Chat with AI Assistant
                 </Button>
               </Link>
             </div>
@@ -55,16 +56,16 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 pt-8 border-t border-gray-100 mt-8">
               <div className="text-center">
-                <p className="text-3xl font-bold text-green-400">1000+</p>
-                <p className="text-gray-600 text-sm">Farmers Helped</p>
+                <p className="text-3xl font-bold" style={{ color: 'var(--kerala-green)' }}>500+</p>
+                <p className="text-gray-600 text-sm">Farmers Assisted</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-bold text-green-400">90%</p>
-                <p className="text-gray-600 text-sm">Success Rate</p>
+                <p className="text-3xl font-bold" style={{ color: 'var(--kerala-green)' }}>50+</p>
+                <p className="text-gray-600 text-sm">Government Schemes</p>
               </div>
               <div className="text-center md:block hidden">
-                <p className="text-3xl font-bold text-green-400">24/7</p>
-                <p className="text-gray-600 text-sm">Expert Support</p>
+                <p className="text-3xl font-bold" style={{ color: 'var(--kerala-gold)' }}>മലയാളം</p>
+                <p className="text-gray-600 text-sm">Malayalam Support</p>
               </div>
             </div>
           </div>
@@ -75,16 +76,16 @@ const HeroSection = () => {
             style={{ animationDelay: "0.2s" }}
           >
             <div className="relative">
-              <div className="absolute -top-6 -left-6 w-24 h-24 bg-farm-yellow rounded-full opacity-20 animate-float"></div>
+              <div className="absolute -top-6 -left-6 w-24 h-24 rounded-full opacity-20 animate-float" style={{ backgroundColor: 'var(--kerala-gold)' }}></div>
               <div
-                className="absolute -bottom-8 -right-8 w-32 h-32 bg-primary rounded-full opacity-20 animate-float"
-                style={{ animationDelay: "1s" }}
+                className="absolute -bottom-8 -right-8 w-32 h-32 rounded-full opacity-20 animate-float"
+                style={{ animationDelay: "1s", backgroundColor: 'var(--kerala-green)' }}
               ></div>
 
               <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
                 <img
-                  src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
-                  alt="Sustainable farming"
+                  src="https://dialogue.earth/content/uploads/2024/03/Pokkali-rice-farming-in-Kerala-India_Alamy_2BAPEC2-1800x1200.jpg"
+                  alt="Kerala farmers working in Pokkali rice fields with coconut palms in background"
                   className="w-full h-[400px] object-cover"
                 />
 
@@ -94,15 +95,15 @@ const HeroSection = () => {
                   style={{ marginRight: "15px", marginBottom: "15px" }}
                 >
                   <div className="flex items-center space-x-2">
-                    <div className="bg-primary-light p-2 rounded-full">
-                      <Tractor className="h-5 w-5 text-green-400" />
+                    <div className="p-2 rounded-full" style={{ backgroundColor: 'var(--kerala-light-green)' }}>
+                      <MessageSquare className="h-5 w-5" style={{ color: 'var(--kerala-green)' }} />
                     </div>
                     <div>
                       <p className="text-xs font-medium text-gray-800">
-                        Modern Farming
+                        AI-Powered Guidance
                       </p>
                       <p className="text-xs text-gray-500">
-                        Tech-driven solutions
+                        Malayalam & English
                       </p>
                     </div>
                   </div>
@@ -113,7 +114,7 @@ const HeroSection = () => {
                   className="absolute -top-4 left-5 bg-white p-3 rounded-full shadow-lg border border-gray-100"
                   style={{ marginTop: "30px" }}
                 >
-                  <Wheat className="h-5 w-5 text-farm-yellow" />
+                  <Wheat className="h-5 w-5" style={{ color: 'var(--kerala-gold)' }} />
                 </div>
               </div>
             </div>
