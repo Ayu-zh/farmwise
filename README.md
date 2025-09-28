@@ -2,7 +2,7 @@
 
 Krishi Sakhi is an AI-powered agricultural advisor designed specifically for Kerala's farmers. The platform helps smallholder farmers access government subsidies and schemes through personalized recommendations, multilingual support, and intelligent document analysis. Built with deep understanding of Kerala's unique agricultural landscape—from Kuttanad's rice paddies to Idukki's spice gardens.
 
-![Krishi Sakhi Homepage](https://i.imgur.com/placeholder-krishi-sakhi-homepage.png)
+![Krishi Sakhi Homepage](https://res.cloudinary.com/de8rn5a9q/image/upload/v1759065203/Screenshot_2025-09-28_182316_jnakhb.png)
 
 ![Krishi Sakhi AI Chat Interface](https://res.cloudinary.com/dvovo1lfg/image/upload/v1744442858/bh0j7nxvojeda7rfjvit.png)
 
